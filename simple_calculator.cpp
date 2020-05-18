@@ -3,7 +3,7 @@ using namespace std;
 
 
 int main() {
-    int num1, num2, sum;
+    int num1, num2, result;
     char op;
 
     cout << "Enter a first number\n";
@@ -17,19 +17,19 @@ int main() {
 
     switch (op) {
         case '+':
-            sum = num1 + num2;
+            result = num1 + num2;
             break;
         case '-':
-            sum = num1 - num2;
+            result = num1 - num2;
             break;
         case '*':
-            sum = num1 * num2;
+            result = num1 * num2;
             break;
         case '/':
-            sum = num1 / num2;
+            result = num1 / num2;
             break;
     }
 
-    cout << sum;
+    cout << result;
     return 0;
 }

@@ -27,7 +27,7 @@ class Country {
         }
 
         void greet() {
-            cout << greeting << endl;
+            cout << greeting << "\n";
         }
 };
 
@@ -39,10 +39,10 @@ int main()
     Country country2("United States of America", "Washington, D. C.", 328000000, "English", "Hello");
 
 
-    cout << country1.name << endl;
+    cout << country1.name << "\n";
     country1.greet();
 
-    cout << country2.name << endl;
+    cout << country2.name << "\n";
     country2.greet();
 
     return 0;

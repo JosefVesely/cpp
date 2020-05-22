@@ -14,18 +14,18 @@ int main()
         cin >> guess;
 
         if (guess < number) {
-            cout << "Higher" << endl;
+            cout << "Higher\n";
         }
         else if (guess > number) {
-            cout << "Lower" << endl;
+            cout << "Lower\n";
         }
         else {
-            cout << "Congratulations! You guessed the number." << endl;
-            cout << "Number is " << number << endl;
+            cout << "Congratulations! You guessed the number. \n";
+            cout << "Number is " << number << "\n";
             break;
         }
 
-        cout << endl;
+        cout << "\n";
     }
 
     return 0;

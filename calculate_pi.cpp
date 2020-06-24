@@ -11,14 +11,14 @@ using namespace std;
 int main()
 {
     double pi;
-    cout << setprecision(32);
+    cout << setprecision(16);
 
     for (double i = 1; 1; i+=2) {
         pi += 4 / i;
         i += 2;
         pi -= 4 / i;
 
-        cout << pi << "\n";
+        cout << pi << endl;
     }
     return 0;
 }

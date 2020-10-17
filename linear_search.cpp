@@ -1,35 +1,19 @@
 #include <iostream>
 #include <vector>
-using namespace std;
 
-
-void linear_search(vector<int> numbers, int value)
+int linearSearch(std::vector<int> nums, int value)
 {
-    bool found;
-    int pos;
-
-    for(int x = 0; x < numbers.size(); x++) {
-        if(numbers[x] == value) {
-            found = true;
-            pos = x + 1;
-            break;
-        }
-    }
-
-    if (found == true) {
-        cout << "Element found at position " << pos;
-    }
-    else {
-        cout << "Element not found";
-    }
+	for (int i = 0; i < nums.size(); i++)
+	{
+		if (nums[i] == value)
+			return i;
+	}
+	return -1;
 }
-
 
 int main()
 {
-    vector<int> numbers = {8, 3, 20, 56, 42, 33};
+	std::vector<int> nums = { 8, 3, 20, 56, 42, 33 };
 
-    linear_search(numbers, 42);
-
-    return 0;
+	std::cout << linearSearch(nums, 2) << std::endl;
 }

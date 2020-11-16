@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-    double pi;
+    double pi = 0;
     cout << setprecision(16);
 
     for (double i = 1; 1; i+=2) {

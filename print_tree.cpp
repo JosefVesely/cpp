@@ -5,7 +5,7 @@ void print_tree(int height)
 {
 	if (height < 4)
 	{
-		cout << "Your tree must be higher than 3 characters!\n";
+		cout << "Your tree must be high at least 4 characters!\n";
 		return;
 	}
 
